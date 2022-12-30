@@ -8,7 +8,7 @@ layout: default
 
   <div class="content">
 
-    <article class="article  article--page  typeset">
+    <article class="article  article--page  typeset  unselectable">
 
       {% if paginator.posts %}
         {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
