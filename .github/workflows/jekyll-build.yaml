@@ -4,6 +4,7 @@ name: Jekyll Build site
 on:
   pull_request:
     paths: [ "website/*" ]
+  workflow_dispatch:
 
   workflow_call:
     inputs:
@@ -37,7 +38,7 @@ jobs:
         run: |
           cd website/
           bundle exec jekyll build --trace
-      
+
       - name: Upload built site to artifacts
         if: "${{ inputs.upload-artifact == true }}"
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808 # v4
