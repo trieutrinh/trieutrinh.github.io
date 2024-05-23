@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
+{
+	"name": "mirceanton.com-devcontainer",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bookworm@sha256:cedf3a2a42a3436c9e8dd06dac4a31931a797ca684b3478b2ef97458c17c6abe",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/go-task:1@sha256:960ec1dae38e8b88e768bbc81ca47a03d8ea11821a4a8ab35cf5ac217a53649d": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2@sha256:503f23cd692325b3cbb8c20a0ecfabb3444b0c786b363e0c82572bd7d71dc099": {
+			"version": "latest",
+			"dockerDashComposeVersion": "latest",
+			"installDockerBuildx": "true",
+			"enableNonRootDocker": "true"
+		}
+	},
+	"forwardPorts": [4000, 35729],
+	"postCreateCommand": "sudo apt update && sudo apt install -y webp && bundle install --gemfile=website/Gemfile"
+}
