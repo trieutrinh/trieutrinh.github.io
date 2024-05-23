@@ -65,7 +65,7 @@ No promises but it'll probably be one of the following:
 
 ---
 <center>
-<i> - Mircea Anton - </i>
+<i> - Trieu Trinh - </i>
 </center>
 
 ---

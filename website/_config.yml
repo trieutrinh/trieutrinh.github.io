@@ -18,23 +18,23 @@ theme_mode: dark
 ## Locale Settings
 ## ================================================================================================
 lang: en
-timezone: Europe/Bucharest
+timezone: Asia/Ho_Chi_Minh
 
 
 ## ================================================================================================
 ## Site Metadata
 ## ================================================================================================
-title: Mircea Anton
+title: Trieu Trinh
 tagline: DevOps by day, HomeOps by night!
 description: In this blog I share my insights and experiences in the realm of devops and the tools and technologies I use in my home lab.
 avatar: assets/img/icon.png
 social_preview_image: assets/img/icon.png
 social:
-  name: Mircea-Pavel Anton
-  email: hi@mirceanton.com
-  links: [ https://www.mirceanton.com ]
+  name: Trieu Trinh
+  email: trieutrinh2@gmail.com
+  links: [ https://www.trieutrinh.com ]
 github:
-  username: mirceanton
+  username: trieutrinh
 
 
 ## ================================================================================================
@@ -54,7 +54,7 @@ paginate: 10
 comments:
   active: giscus
   giscus:
-    repo: mirceanton/mirceanton.com
+    repo: trieutrinh/trieutrinh.com
     repo_id: R_kgDOLUY-RA
     category: Announcements
     category_id: DIC_kwDOLUY-RM4CdWUH
