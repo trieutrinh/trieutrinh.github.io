@@ -3,11 +3,11 @@
 name: Build and Publish Docker Image
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - website/*
-      - Dockerfile
+  # push:
+  #   branches: [ main ]
+  #   paths:
+  #     - website/*
+  #     - Dockerfile
 
   workflow_dispatch:
     inputs:

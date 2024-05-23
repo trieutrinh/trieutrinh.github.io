@@ -4,8 +4,8 @@ name: Labeler
 
 on:
   workflow_dispatch: {}  # Manual Trigger
-  pull_request_target:
-    branches: [ "main" ]
+  # pull_request_target:
+  #   branches: [ "main" ]
 
 jobs:
   labeler:
