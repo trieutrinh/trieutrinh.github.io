@@ -8,7 +8,7 @@ order: 4
 
 # Hi there 👋
 
-I'm Trieu, a ML OPS Engineer from Bucharest, Romania
+I'm Trieu, a DevOps Engineer from DaNang City, Viet Nam
 
 What started with “computers are interesting”, ended up with building custom servers for my Home Lab, tinkering with Raspberry Pi clusters, automating deployments, and being the sysadmin of my personal “datacenter”.
 
