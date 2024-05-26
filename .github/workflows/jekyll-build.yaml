@@ -3,40 +3,36 @@ name: Jekyll Build site
 
 on:
   pull_request:
-    paths: [ "website/*" ]
   workflow_dispatch:
 
-  workflow_call:
-    inputs:
-      upload-artifact:
-        type: boolean
-        description: Whether or not to upload the built site to GitHub Artifacts.
-        required: false
-        default: false
-      artifact-name:
-        type: string
-        description: The name of the artifact to upload.
-        required: false
-        default: "${{ github.sha }}"
+  # workflow_call:
+  #   inputs:
+  #     upload-artifact:
+  #       type: boolean
+  #       description: Whether or not to upload the built site to GitHub Artifacts.
+  #       required: false
+  #       default: false
+  #     artifact-name:
+  #       type: string
+  #       description: The name of the artifact to upload.
+  #       required: false
+  #       default: "${{ github.sha }}"
 
 jobs:
   jekyll-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+        uses: actions/checkout@v4 # v4
 
       - name: Install jekyll and bundler
         run: |
           sudo gem install bundler jekyll
-          bundler --version
-          jekyll --version
       - name: Install gems
-        run: sudo bundle install --gemfile=website/Gemfile
+        run: sudo bundle install --gemfile=Gemfile
 
       - name: Run jekyll build
         run: |
-          cd website/
           bundle exec jekyll build --trace
 
       - name: Setup AWS CLI
@@ -45,7 +41,8 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
+
       - name: Upload build site to AWS S3 bucket
         run: |
-          aws s3 sync website/_site/ ${{ secrets.AWS_S3_BUCKET }} --delete
+          aws s3 sync _site/ ${{ secrets.AWS_S3_BUCKET }} --delete
 

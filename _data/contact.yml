@@ -1,11 +1,12 @@
 #  The contact options shown at the bottom of the left-side menu
 ---
-- type: youtube
-  icon: fa-brands fa-youtube
-  url: https://youtube.com/@trieutrinh
+# - type: youtube
+#   icon: fa-brands fa-youtube
+#   url: https://youtube.com/@trieutrinh2
 
 - type: github
   icon: fab fa-github
+  url: https://github.com/trieutrinh
 
 - type: linkedin
   icon: fab fa-linkedin

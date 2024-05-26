@@ -2,7 +2,6 @@
 ## ================================================================================================
 ## URL Settings
 ## ================================================================================================
-# url: https://mirceanton.com
 url: ""
 baseurl: ""  # ??
 
@@ -27,7 +26,7 @@ timezone: Asia/Ho_Chi_Minh
 title: Trieu Trinh
 tagline: DevOps by day, HomeOps by night!
 description: >-
-  In this blog I share my insights and experiences in the realm of devops and the tools and technologies I use in my home lab.
+  In this blog I share my insights and experiences in the realm of devops and the tools and technologies.
 avatar: assets/img/icon.png
 social_preview_image: assets/img/icon.png
 social:
@@ -35,7 +34,6 @@ social:
   email: trieutrinh2@gmail.com
   links:
     - https://www.trieutrinh.com
-  # links: [ https://www.trieutrinh.com ]
 github:
   username: trieutrinh
 
@@ -45,7 +43,7 @@ github:
 ## ================================================================================================
 # google_site_verification: ""  # TODO: fill in verification string
 # google_analytics:
-#   id: G-6C126MZNGT
+#   id:
 
 
 ## ================================================================================================
