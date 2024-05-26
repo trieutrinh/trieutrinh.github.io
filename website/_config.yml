@@ -11,7 +11,7 @@ baseurl: ""  # ??
 ## Theme Settings
 ## ================================================================================================
 theme: jekyll-theme-chirpy
-theme_mode: dark
+theme_mode: # [light | dark]
 
 
 ## ================================================================================================
@@ -26,13 +26,16 @@ timezone: Asia/Ho_Chi_Minh
 ## ================================================================================================
 title: Trieu Trinh
 tagline: DevOps by day, HomeOps by night!
-description: In this blog I share my insights and experiences in the realm of devops and the tools and technologies I use in my home lab.
+description: >-
+  In this blog I share my insights and experiences in the realm of devops and the tools and technologies I use in my home lab.
 avatar: assets/img/icon.png
 social_preview_image: assets/img/icon.png
 social:
   name: Trieu Trinh
   email: trieutrinh2@gmail.com
-  links: [ https://www.trieutrinh.com ]
+  links:
+    - https://www.trieutrinh.com
+  # links: [ https://www.trieutrinh.com ]
 github:
   username: trieutrinh
 
@@ -40,9 +43,9 @@ github:
 ## ================================================================================================
 ## Google Settings
 ## ================================================================================================
-google_site_verification: ""  # TODO: fill in verification string
-google_analytics:
-  id: G-6C126MZNGT
+# google_site_verification: ""  # TODO: fill in verification string
+# google_analytics:
+#   id: G-6C126MZNGT
 
 
 ## ================================================================================================
@@ -52,12 +55,14 @@ toc: true
 paginate: 10
 
 comments:
-  active: giscus
+  # active: giscus
+  # provider: giscus
+
   giscus:
-    repo: trieutrinh/trieutrinh.com
-    repo_id: R_kgDOLUY-RA
+    repo: trieutrinh/trieutrinh.github.io
+    repo_id:
     category: Announcements
-    category_id: DIC_kwDOLUY-RM4CdWUH
+    category_id:
     mapping: title
     input_position: bottom
     lang: en

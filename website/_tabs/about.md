@@ -15,3 +15,6 @@ What started with “computers are interesting”, ended up with building custom
 ---
 
 Download my [resume]({{ site.url }}/assets/docs/Resume.pdf)
+
+> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+{: .prompt-tip }
